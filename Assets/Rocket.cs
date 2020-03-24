@@ -12,15 +12,13 @@ public class Rocket : MonoBehaviour
     //game objects
     Rigidbody _rigidBodyRocket;
     AudioSource _mainEngineAudio;
-    bool _touchDown = true;
+    bool _touchDown = false;
     int _collisions = 0;
     bool _mainEngineToggle;
     float _rotationSpeed = 0;
 
     void Start()
     {
-        _rcsThrust = 5f;
-        _mainThrust = 200;
         _rigidBodyRocket = GetComponent<Rigidbody>();
         _mainEngineAudio = GetComponent<AudioSource>();
     }
